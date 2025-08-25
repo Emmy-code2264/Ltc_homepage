@@ -249,3 +249,37 @@ body {
   border: 1px solid #009BDD;
   transition: color .15s ease-in-out, backgournd-color .15s ease-in-out;
 }
+
+.coin_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+
+.latest_update h2 {
+  font-size: 50px;
+  font-family: "Mulish", sans-serif;
+  color: #262626;
+}
+
+.latest_update h5 {
+  font-size: 15px;
+  color: rgb(43, 32, 32);
+}
+
+.Earn_block {
+  background-color: #288ef5;
+  color: white;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.Earn_rate, .profit {
+  margin: 12px 20px;
+}
