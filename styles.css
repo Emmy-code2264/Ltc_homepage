@@ -492,6 +492,7 @@ body {
 .card:hover .buy_btn {
   background: #fff;
   color: #009BDD;
+  transition: all 0.3s;
 }
 
 .buy_btn:hover {
@@ -530,6 +531,12 @@ body {
   color: #262626;
   font-size: 22px;
   font-weight: 700;
+}
+
+.row2 div:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all .3s ease-in-out;
 }
 
 
