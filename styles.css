@@ -487,6 +487,27 @@ body {
   font-size: 38px;
 }
 
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2 div {
+  text-align: center;
+}
+
+.row2 img {
+  padding: 22px 0;
+  width: 70px;
+  vertical-align: middle;
+}
+
+.row2 h6 {
+  color: #262626;
+  font-size: 22px;
+  font-weight: 700;
+}
+
 
 
 
