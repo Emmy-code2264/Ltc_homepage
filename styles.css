@@ -5,10 +5,7 @@
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -18,14 +15,15 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  overflow-x: hidden;
   line-height: 1.5;
-  color: #828282;
-  background-color: #FAFDFF;
+  /* color: #828282; */
+  /* background-color: #FAFDFF; */
   overflow-x: hidden;
 }
 
 .container {
-  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -39,17 +37,20 @@ body {
 .links {
   display: flex;
   gap: 30px;
-  list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 100px;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
+}
+
+.links li {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: #828282;
   font-weight: 400;
+  list-style: none;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
   cursor: pointer;
   transition: all 0.4s ease;
   transition: color 0.4s ease;
@@ -256,6 +257,7 @@ body {
   justify-content: center;
   gap: 70px;
   margin-top: 20px;
+  margin: auto;
 }
 
 .coin {
@@ -265,7 +267,6 @@ body {
 }
 
 .coin img {
-  margin: 0 auto;
   width: 100%;
   display: block;
 }
@@ -299,7 +300,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -30px;
 }
 
 .Earn_rate p {
@@ -345,5 +346,136 @@ body {
   color: rgb(175, 175, 175);
   font-size: 16px;
   max-width: 78%;
-  margin: 0px auto 50px
+  margin: 0px auto 50px;
 }
+
+.card_section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 20px #009BDD0F;
+  position: relative;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 20px 5px;
+  max-width: 250px;
+}
+
+
+.card:hover {
+  background: transparent linear-gradient(180deg, #95E0FF 0%, #008CC8 100%);
+  box-shadow: 0px 50px 30px #009BDD33;
+  border-radius: 8px;
+  opacity: 1;
+  cursor: pointer;
+  color: #fff;
+  transition: all .5s;
+  transform: translateY(-20px);
+}
+
+.img_sec {
+  text-align: center;
+}
+
+.img_sec img {
+  width: 129px;
+  max-width: 100%;
+  height: 112px;
+}
+
+.hover_img {
+  display: none;
+}
+
+.blue_text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #262626;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card hr {
+  border: 1px solid #009BDD;
+  width: 55%;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.plain_list {
+  text-align: center;
+}
+
+.rate_txt {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #AFAFAF;
+}
+
+.per_day {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #262626;
+}
+
+.bonus_txt {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #262626;
+}
+
+.start_btn {
+  margin-top: 35px;
+}
+
+.buy_btn {
+  background: #009BDD;
+  box-shadow: 0px 5px 10px #009BDD29;
+  border-radius: 3px;
+  opacity: 1;
+  color: #fff;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 7px 0px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.buy_btn:hover {
+  transition: all 0.3s;
+}
+
+
+
+
+
+/* @media screen {
+  body {
+    overflow-x: hidden;
+  }
+
+  .coin img {
+    width: 30%;
+  }
+
+  .latest_update {
+    width: 20px;
+  }
+
+  .latest_update h2 {
+    font-size: 20px;
+  }
+
+  .links li {
+    font-size: 10px;
+  }
+} */
