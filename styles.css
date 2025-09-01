@@ -371,9 +371,24 @@ body {
   border-radius: 8px;
   opacity: 1;
   cursor: pointer;
-  color: #fff;
   transition: all .5s;
   transform: translateY(-20px);
+}
+
+.card:hover .blue_text {
+  color: #fff;
+}
+
+.card:hover .per_day {
+  color: #fff;
+}
+
+.card:hover .bonus_txt {
+  color: #fff;
+}
+
+.card:hover .rate_txt {
+  color: #fff;
 }
 
 .img_sec {
@@ -468,6 +483,11 @@ body {
   font-size: 15px;
   font-weight: 800;
   text-decoration: none;
+}
+
+.card:hover .buy_btn {
+  background: #fff;
+  color: #009BDD;
 }
 
 .buy_btn:hover {
