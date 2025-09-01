@@ -398,6 +398,11 @@ body {
   text-align: center;
 }
 
+.blue_text:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+
 .card hr {
   border: 1px solid #009BDD;
   width: 55%;
@@ -416,6 +421,11 @@ body {
   color: #AFAFAF;
 }
 
+.rate_txt:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+
 .per_day {
   font-size: 14px;
   font-weight: 500;
@@ -423,11 +433,21 @@ body {
   color: #262626;
 }
 
+.per_day:hover {
+  color: #FFFFFF;
+  transition: color .3s ease-in-out;
+}
+
 .bonus_txt {
   font-size: 16px;
   font-weight: 500;
   margin-top: 15px;
   color: #262626;
+}
+
+.bonus_txt:hover {
+  color: #ffffff;
+  transition: color .3s ease-in-out;
 }
 
 .start_btn {
@@ -452,7 +472,25 @@ body {
 
 .buy_btn:hover {
   transition: all 0.3s;
+  background-color: #fff;
+  color: #009BDD;
 }
+
+.choose_title h2 {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.main_title2 {
+  font-weight: 700;
+  color: #262626;
+  font-size: 38px;
+}
+
+
+
+
+
 
 
 
