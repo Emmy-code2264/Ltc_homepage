@@ -425,6 +425,10 @@ body {
   margin-left: 50px;
 }
 
+.card:hover hr {
+  border-color: #fff;
+}
+
 .plain_list {
   text-align: center;
 }
