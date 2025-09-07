@@ -573,7 +573,7 @@ body {
   }
 
   .card {
-    max-width: 350px;
+    max-width: 100%;
     text-align: center;
   }
 
