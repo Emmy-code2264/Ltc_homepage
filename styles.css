@@ -66,7 +66,6 @@ body {
 
 /*form  banner*/
 .banner_section {
-  padding: 20px;
   background:  linear-gradient(#40C2F9, #006FDD);
   width: 100%;
   padding: 100px 0;
@@ -84,7 +83,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .row{
-    grid-template-columns: 1fr; place-content: center;
+    grid-template-columns: 1fr; 
+    place-content: center;
   }
 
   .links li {
@@ -258,12 +258,24 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .left-panel, .right-panel {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .banner_section {
+    padding: 30px 0;
+  }
+
   .left-panel h2{
     font-size: 20px;
   }
 
   .left-panel p {
     font-size: 12px;
+    line-height: 20px;
   }
 
   .sign_in-btn {
@@ -320,8 +332,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -30px;
 }
 
 .Earn_rate p {
@@ -381,15 +391,18 @@ body {
   }
 
   .Earn_block {
-    gap: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .Earn_rate h6, .profit h6 {
-    font-size: 15px;
+
+  .profit p, .Earn_rate p {
+    margin: 0 auto;
   }
 
-  .Earn_rate p, .profit p {
-    font-size: small;
+   .Earn_rate h6,.profit h6 {
+    margin: 0 auto;
   }
 
   .main_title {
@@ -556,10 +569,16 @@ body {
   .card_section {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .card {
-     margin: 20px 100px;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .card hr {
+    margin:  auto;
   }
 }
 
@@ -618,12 +637,26 @@ footer .container {
 
 @media screen and (max-width: 500px) {
   .main_title2 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .findplan_centerd-text p {
+    max-width: 100%;
+    font-size: small;
   }
 
   .row2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
+  }
+
+  footer .container {
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+
+  .footer_content p {
+    font-size: 12px;
   }
 }
