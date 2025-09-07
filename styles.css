@@ -86,6 +86,10 @@ body {
   .row{
     grid-template-columns: 1fr; place-content: center;
   }
+
+  .links li {
+    display: none;
+  }
 }
 
 .row ::after, .row ::before {
@@ -252,6 +256,20 @@ body {
   border: 1px solid #009BDD;
   transition: color .15s ease-in-out, backgournd-color .15s ease-in-out;
 }
+
+@media screen and (max-width: 500px) {
+  .left-panel h2{
+    font-size: 20px;
+  }
+
+  .left-panel p {
+    font-size: 12px;
+  }
+
+  .sign_in-btn {
+    width: 100%;
+  }
+}
 /*end of form*/
 /*coin img section*/
 .coin_section {
@@ -334,22 +352,6 @@ body {
   margin-top: 8px;
 }
 
-
-@media screen and (max-width: 900px) {
-  .coin_section {
-    display: grid;
-    place-content: center;
-  }
-
-  .latest_update {
-    margin: 0 auto;
-  }
-
-  .Earn_block {
-    gap: 40px;
-  }
-}
-
 .findplan_centerd-text {
   text-align: center;
 }
@@ -368,9 +370,39 @@ body {
   margin: 0px auto 50px;
 }
 
+@media screen and (max-width: 900px) {
+  .coin_section {
+    display: grid;
+    place-content: center;
+  }
+
+  .latest_update {
+    margin: 0 auto;
+  }
+
+  .Earn_block {
+    gap: 40px;
+  }
+
+  .Earn_rate h6, .profit h6 {
+    font-size: 15px;
+  }
+
+  .Earn_rate p, .profit p {
+    font-size: small;
+  }
+
+  .main_title {
+    font-size: 25px;
+  }
+}
+
+/*card_section*/
 .card_section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -525,6 +557,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .card {
+     margin: 20px 100px;
+  }
 }
 
 .choose_title h2 {
@@ -580,27 +616,14 @@ footer .container {
   text-align: center;
 }
 
-
-
-
-/* @media screen {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 500px) {
+  .main_title2 {
+    font-size: 25px;
   }
 
-  .coin img {
-    width: 30%;
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
-
-  .latest_update {
-    width: 20px;
-  }
-
-  .latest_update h2 {
-    font-size: 20px;
-  }
-
-  .links li {
-    font-size: 10px;
-  }
-} */
+}
